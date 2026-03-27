@@ -44,6 +44,7 @@ public class FileSystem {
 			case 4:
 				str = CrudFiles.readFromFile(fileObj2,true);
 				CrudFiles.writeToFile(fileObj,str);
+				fileObj2.delete();
 				System.out.println(str);
 				break;
 			
